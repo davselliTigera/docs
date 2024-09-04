@@ -53,7 +53,7 @@ from outside of the Kubernetes cluster CIDR, some traffic flows may have NAT app
 
 :::
 
-1. Disable the old IP pool.
+2. Disable the old IP pool.
 
 :::note
 
@@ -61,11 +61,11 @@ Disabling an IP pool only prevents new IP address allocations; it does not affec
 
 :::
 
-1. Delete pods from the old IP pool. This includes any new pods that may have been created with the old IP pool prior to disabling the pool.
+3. Delete pods from the old IP pool. This includes any new pods that may have been created with the old IP pool prior to disabling the pool.
 
-1. Verify that new pods get an address from the new IP pool.
+4. Verify that new pods get an address from the new IP pool.
 
-1. Delete the old IP pool.
+5. Delete the old IP pool.
 
 ## Tutorial
 
